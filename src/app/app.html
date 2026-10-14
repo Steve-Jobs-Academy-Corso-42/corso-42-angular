@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+<main id="home" class="catalogue">
+  <h1>Catalogo</h1>
+
+  <section id="contatori" aria-labelledby="counters-heading">
+    <h2 id="counters-heading">Contatori</h2>
+    <!-- Ogni istanza del componente mantiene il proprio valore. -->
+    <div class="counters">
+      <app-counter></app-counter>
+      <app-counter></app-counter>
+      <app-counter></app-counter>
+    </div>
+  </section>
+
+  <section id="prodotti" aria-labelledby="products-heading">
+    <h2 id="products-heading">Prodotti</h2>
+    <!-- Lo stesso componente può essere riutilizzato più volte nella pagina. -->
+    <div class="product-cards">
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+      <app-product-card></app-product-card>
+    </div>
+  </section>
+</main>

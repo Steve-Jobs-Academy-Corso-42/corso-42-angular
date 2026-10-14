@@ -1,0 +1,38 @@
+.catalogue {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 36px 24px 48px;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 30px;
+  letter-spacing: -0.8px;
+}
+h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+section + section {
+  margin-top: 36px;
+}
+.counters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+/* La griglia distribuisce le card in base allo spazio disponibile. */
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .catalogue {
+    padding: 28px 16px 36px;
+  }
+  .counters {
+    grid-template-columns: 1fr;
+  }
+}

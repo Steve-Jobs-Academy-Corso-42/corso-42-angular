@@ -1,0 +1,6 @@
+<article class="product-card">
+  <!-- L'interpolazione legge il signal e ne mostra il valore aggiornato. -->
+  <h3 aria-live="polite" aria-atomic="true">{{ title() }}</h3>
+  <p>{{ description }}</p>
+  <button type="button" (click)="changeTitle()">Change Title</button>
+</article>

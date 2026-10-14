@@ -1,0 +1,9 @@
+<div class="counter" role="group" aria-label="Contatore">
+  <p>Counter</p>
+  <div class="counter-controls">
+    <!-- (click) collega l'evento del pulsante al metodo del componente. -->
+    <button type="button" (click)="decrement()" aria-label="Diminuisci il contatore">−</button>
+    <output aria-live="polite" aria-atomic="true">{{ count() }}</output>
+    <button type="button" (click)="increment()" aria-label="Aumenta il contatore">+</button>
+  </div>
+</div>

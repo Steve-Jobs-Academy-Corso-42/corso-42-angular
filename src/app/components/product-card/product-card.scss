@@ -1,0 +1,39 @@
+:host {
+  display: block;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 2px 8px #1f293705;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+p {
+  flex: 1;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+button {
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: 1px solid #cfdcf1;
+  border-radius: 7px;
+  background: #edf3fd;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+}
+button:hover {
+  background: #dfeafa;
+}
