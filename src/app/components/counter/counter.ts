@@ -12,11 +12,11 @@ export class Counter {
 
   increment(): void {
     // update calcola il nuovo valore a partire dal precedente.
-    this.count.update((value) => value + 1);
+    this.count.update((value) => Math.min(10, value + 1));
   }
 
   decrement(): void {
     // I valori negativi sono ammessi: questo è un contatore, non una quantità d'acquisto.
-    this.count.update((value) => value - 1);
+    this.count.update((value) => Math.max(0, value - 1));
   }
 }
