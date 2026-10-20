@@ -25,11 +25,31 @@
     <h2 id="products-heading">Prodotti</h2>
     <!-- Lo stesso componente può essere riutilizzato più volte nella pagina. -->
     <div class="product-cards">
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
-      <app-product-card></app-product-card>
+      <app-product-card
+        title="Prodotto 1"
+        description="Descrizione del prodotto 1"
+        [price]="1999"
+      ></app-product-card>
+      <app-product-card
+        title="Prodotto 2"
+        description="Descrizione del prodotto 2"
+        [price]="3999"
+      ></app-product-card>
+      <app-product-card
+        title="Prodotto 3"
+        description="Descrizione del prodotto 3"
+        [price]="4999"
+      ></app-product-card>
+      <app-product-card
+        title="Prodotto 4"
+        description="Descrizione del prodotto 4"
+        [price]="5999"
+      ></app-product-card>
+      <app-product-card
+        title="Prodotto 5"
+        description="Descrizione del prodotto 5"
+        [price]="6999"
+      ></app-product-card>
     </div>
   </section>
 </main>

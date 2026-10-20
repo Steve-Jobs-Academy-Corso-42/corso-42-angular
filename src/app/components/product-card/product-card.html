@@ -2,6 +2,5 @@
   <!-- L'interpolazione legge il signal e ne mostra il valore aggiornato. -->
   <h3 aria-live="polite" aria-atomic="true">{{ title() }}</h3>
   <p>{{ description() }}</p>
-  <p>{{ price() }} €</p>
-  <button type="button" (click)="changeTitle()">Change Title</button>
+  <p>{{ price() / 100 | number: '1.2-2' }} €</p>
 </article>
