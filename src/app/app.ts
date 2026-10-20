@@ -11,4 +11,6 @@ import { ProductCard } from './components/product-card/product-card';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {}
+export class App {
+  contatoreTotale = 0;
+}

@@ -3,13 +3,21 @@
 <main id="home" class="catalogue">
   <h1>Catalogo</h1>
 
+  <h2>Totale: {{ contatoreTotale }}</h2>
+
   <section id="contatori" aria-labelledby="counters-heading">
     <h2 id="counters-heading">Contatori</h2>
     <!-- Ogni istanza del componente mantiene il proprio valore. -->
     <div class="counters">
-      <app-counter></app-counter>
-      <app-counter></app-counter>
-      <app-counter></app-counter>
+      <app-counter
+        (segnalaCambiamento)="contatoreTotale += $event"
+      ></app-counter>
+      <app-counter
+        (segnalaCambiamento)="contatoreTotale += $event"
+      ></app-counter>
+      <app-counter
+        (segnalaCambiamento)="contatoreTotale += $event"
+      ></app-counter>
     </div>
   </section>
 
